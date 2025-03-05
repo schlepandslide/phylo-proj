@@ -1,0 +1,37 @@
+---
+title: "parsimony"
+author: "Aharon"
+date: "2025-03-05"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Setup
+
+```{r}
+library(ape)
+library(adegenet)
+library(phangorn)
+```
+
+## Including Plots
+
+
+
+```{r}
+dna <- fasta2DNAbin(file="fasta/pseudomonas.fasta")
+
+D <- dist.dna(dna, model="TN93")
+
+tre <- njs(D)
+
+tre <- ladderize(tre)
+
+plot(tre, cex=.6)
+title("Pseudomonas Tree")
+```
+
+
