@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Setup
 
-```{r}
+```{r, include=FALSE}
 library(ape)
 library(adegenet)
 library(phangorn)
@@ -22,7 +22,7 @@ library(phangorn)
 
 
 ```{r}
-dna <- fasta2DNAbin(file="fasta/pseudomonas.fasta")
+dna <- fasta2DNAbin(file="fasta/pseudomonas-s16.fasta")
 
 D <- dist.dna(dna, model="TN93")
 
@@ -30,8 +30,20 @@ tre <- njs(D)
 
 tre <- ladderize(tre)
 
-plot(tre, cex=.6)
-title("Pseudomonas Tree")
+plot(tre, cex=.5)
+title("Pseudomonas rpsP gene Tree")
+```
+```{r}
+dna <- fasta2DNAbin(file="fasta/pseudomonas-s16.fasta")
+dna2 <- as.phyDat(dna)
+
+tre.ini <- nj(dist.dna(dna,model="raw"))
+parsimony(tre.ini, dna2)
+
+tre.pars <- optim.parsimony(tre.ini, dna2)
+
+plot(tre.pars, cex=.6)
+title("Pseudomonas rpsP gene Tree")
 ```
 
 
