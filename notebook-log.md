@@ -30,3 +30,26 @@ sample code/commands:
 TBD: iq-tree beta code?
 
 .\iqtree -s pseudomonas-s16.fasta -spp pseudomonas-s16.nxs -bb 1000 -nt AUTO -bsam GENESITE -pre pseudomonas-s16.bsam
+
+#4/10/25
+
+- Mr Bayes set-up 
+	- Pros: Easy set-up Cons: Lots of tinkering Considerations: You actually need to somewhat understand whats happening
+
+> exe pseudomonas 
+> lset nucmodel=codon nst=6 rates=invgamma [!Error in Lset due to STOP codon]
+> lset nucmodel=4by4 nst=6 rates=invgamma [works]
+> mcmcp ngen=20000 samplefreq=200 diagnfreq=500 burninfrac=0.20 stopval=0.01
+> sump [!Error; Could not open file]
+[Forgot to actually run mcmc]
+> mcmc
+> [Continue?] Yes > 20
+> [Recieve output]
+> sump
+- undersampled
+> mcmcp ngen=20000 samplefreq=2000 diagnfreq=500 burninfrac=0.20 stopval=0.01
+- undersampled again
+> mcmcp ngen=500000 samplefreq=5 diagnfreq=50 burninfrac=0.20 stopval=0.01
+> mcmc
+> sump
+
