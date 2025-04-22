@@ -36,7 +36,7 @@ TBD: iq-tree beta code?
 - Mr Bayes set-up 
 	- Pros: Easy set-up Cons: Lots of tinkering Considerations: You actually need to somewhat understand whats happening
 
-> exe pseudomonas 
+> exe pseudomonas-s16.nxs
 > lset nucmodel=codon nst=6 rates=invgamma [!Error in Lset due to STOP codon]
 > lset nucmodel=4by4 nst=6 rates=invgamma [works]
 > mcmcp ngen=20000 samplefreq=200 diagnfreq=500 burninfrac=0.20 stopval=0.01
@@ -52,4 +52,21 @@ TBD: iq-tree beta code?
 > mcmcp ngen=500000 samplefreq=5 diagnfreq=50 burninfrac=0.20 stopval=0.01
 > mcmc
 > sump
+> sumt
 
+#4/22/25
+
+- ASTRAL
+	- Pros: Easy install, handles gene duplication/loss
+	- Cons: Command line only, needs multiple genes/markers to work
+	- Considerations: The outcome here is dependant on what we do in Mr. Bayes
+
+Command list
+
+>java -jar astral.5.7.1.jar -i pseudomonas-s16.nxs.con.tre [!Error; if only it were so simple]
+
+WHEN RUNNING SUMT IN MR. BAYES, ADD conformat=simple!!!
+My data may not be able to be run due to it using a single gene so I'm uing the example set
+
+>java -jar astral.5.7.1.jar -q test_data/simulated_14taxon.default.tre -i test_data/simulated_14taxon.gene.tre -o test_data/simulated_scored.tre 2> test_data/simulated_scored.log
+[data stored in the new file specified in the -o]
