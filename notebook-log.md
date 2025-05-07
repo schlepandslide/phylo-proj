@@ -4,23 +4,24 @@ Short list of required software (Based on Windows x64 archetecture)
 - IQ-Tree
 - mrbayes
 
-# 2/20/25
-- removed old data set, new data comes from ncbi. see the fna file for more info
-- Used ClustalX2 on new data: pseudomonas.fna
+The data was randomly collected from the NCBI database of the genus *Pseudomonas*, focusing on the s16 gene
+
+# 2/20/25 CLUSTALX
 
 Pros: Very easy to install, UI based
-Cons: The same as ClustalW2, may not be as complete as T-coffee
+Cons: The same as ClustalW2, may not be as complete or accurate as T-coffee
 
 Based on a windows install, you can essentially plug-and-play. Though install clustalW2 beforehand using the documentation
 Load the fna file > Ctrl+O > Ctrl+L to make alignments > Save sequence as nexus, and .phy
 
-# 3/4/25
+# 3/4/25 BASIC TREE ALIGNMENT
 - updated fasta alignments
 - wrote r script using ape and pranghorn
 	- follows the same process as class, except uses njs() due to an error
-*note that this is unessecary for the pipeline and was done as an exercise
+	
+*note that this is unessecary for the pipeline and was done as an exercise*
 
-# 3/20/25
+# 3/20/25 IQ-TREE
 - replaced the dataset once again, say hello to the 16s gene of *Pseudomonas*
 - chose IQ-Tree as my software for max. likelihood
 	- mainly due to RAxML not running on windows
@@ -42,6 +43,8 @@ TBD: iq-tree beta code?
 
 ## Real IQ-tree code
 .\iqtree2 -s pseudo-16s.phy
+
+Because the main goal of the project is to run a baysean analysis, we don't need to care too much about iq-tree optimization. Instead we can continue with it's automatic model.
 
 ```
 IQ-TREE multicore version 2.4.0 for Windows 64-bit built Feb  7 2025
@@ -284,7 +287,7 @@ Date and Time: Wed May 07 10:46:21 2025
 > sump
 > sumt conformat=simple
 
-[final data set run]
+## Final Data Set Code
 > exe pseudo-16s.nxs
 > lset nucmodel=4by4 nst=6 rates=invgamma
 > mcmcp ngen=1500000 samplefreq=5 diagnfreq=50 burninfrac=0.20 stopval=0.01
@@ -951,7 +954,9 @@ Date and Time: Wed May 07 10:46:21 2025
       99 % credible set contains 205398 trees
 ```
 
-# 4/22/25
+# 4/22/25 ASTRAL
+
+We can ignore this as it doesn't apply to our dataset. However if you chose to reproduce this pipeline with different genes, it may be useful.
 
 - ASTRAL
 	- Pros: Easy install, handles gene duplication/loss

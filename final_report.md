@@ -1,4 +1,4 @@
-# **Phylogenetic Analysis of Pseudomonas Bacterial Genera and the S16 gene**
+# **Phylogenetic Analysis of Pseudomonas Bacterial Genera and the S16 Gene**
 Aharon Heinemann
 <p>5/4/2025 - 6 Iyyar 5785
 
