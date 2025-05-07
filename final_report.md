@@ -79,8 +79,10 @@ FigTree [4] was used to then visualize the MrBayes tree readout. The program use
 
 
 ```
-
+Fig 1. Highest Posterior Density Interval for *Pseudomonas* 16s Gene. The PSRF shows that the chains of the model converged and the average ESS of the parameters show that the sample sizes were appropriate.
+The average standard deviation of the HPD is 0.006764. The maximum standard deviation was 0.019. The average PSRF was 1.0 and the maximum PSRF was 1.004.
  ![Pseudomonas 16s Equal Tree](images/pseudo-16s-bayes-tree-anno.jpg)
+Fig. 2 *Pseudomonas* 16s Gene Tree. Isolated *parafulva* clade highlighted in purple.
 
 Because the average standard deviation of split frequencies is **σ << 0.1**, we can determine that there is a low level of divergence between samples.
 This means that the model was stable in converging and that we can generally assume that there is strong evidence for the overall phylogenetic relationship between the samples.
