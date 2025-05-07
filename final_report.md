@@ -80,9 +80,9 @@ FigTree was used to then visualize the MrBayes tree readout. The program uses th
 
 ```
 
- ![Pseudomonas 16s Equal Tree](images/pseudo-16s-bayes-tree-anno.png)
+ ![Pseudomonas 16s Equal Tree](images/pseudo-16s-bayes-tree-anno.jpg)
  
- ![Pseudomonas 16s Circle Tree](images/pseudo-16s-bayes-tree-anno-circle.png)
+ ![Pseudomonas 16s Circle Tree](images/pseudo-16s-bayes-tree-anno-circle.jpg)
 
 Because the average standard deviation of split frequencies is **σ << 0.1**, we can determine that there is a low level of divergence between samples. This means that the model was stable in converging and that we can generally assume that there is strong evidence for the overall phylogenetic relationship between the samples.
 We can also determine that the data was not undersampled based on all of the parameters converging on a PSRF of 1.0. 
