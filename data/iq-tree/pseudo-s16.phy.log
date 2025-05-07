@@ -1,0 +1,14 @@
+IQ-TREE multicore version 2.4.0 for Windows 64-bit built Feb  7 2025
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    BINCH (AVX512, FMA3, 47 GB RAM)
+Command: C:\iqtree\bin\iqtree2.exe -s pseudo-s16.phy
+Seed:    348249 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed May 07 10:46:04 2025
+Kernel:  AVX+FMA - 1 threads (16 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 16 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file pseudo-s16.phy ... ERROR: File not found pseudo-s16.phy

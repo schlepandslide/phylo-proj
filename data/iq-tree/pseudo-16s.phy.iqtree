@@ -1,0 +1,239 @@
+IQ-TREE 2.4.0 built Feb  7 2025
+
+Input file name: pseudo-16s.phy
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 682894
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 30 sequences with 1510 nucleotide sites
+Number of constant sites: 1263 (= 83.6424% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 1263 (= 83.6424% of all sites)
+Number of parsimony informative sites: 126
+Number of distinct site patterns: 328
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: HKY+F+R2
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+HKY+F+R2          -4877.546    9881.092 +   0.0572    9886.668 +   0.0675   10216.243 +     0.69
+TPM3u+F+R2        -4875.290    9878.581 +    0.201    9884.339 +    0.216   10219.052 +    0.169
+TN+F+R2           -4876.231    9880.461 +   0.0784    9886.219 +   0.0845   10220.933 +   0.0661
+TPM2u+F+R2        -4877.364    9882.727 -   0.0252    9888.485 -   0.0272   10223.199 -   0.0213
+K3Pu+F+R2         -4877.503    9883.005 -    0.022    9888.763 -   0.0237   10223.477 -   0.0185
+TIM3+F+R2         -4873.972    9877.943 +    0.276    9883.885 +    0.271   10223.734 -   0.0163
+HKY+F+I+R2        -4878.125    9884.250 -   0.0118    9890.007 -   0.0127   10224.721 -  0.00995
+TPM3u+F+I+R2      -4875.855    9881.710 -    0.042    9887.651 -   0.0413   10227.501 -  0.00248
+TIM2+F+R2         -4876.054    9882.108 -   0.0344    9888.050 -   0.0338   10227.899 -  0.00203
+TIM+F+R2          -4876.190    9882.380 -     0.03    9888.322 -   0.0295   10228.171 -  0.00177
+TN+F+I+R2         -4876.803    9883.607 -   0.0163    9889.548 -    0.016   10229.398 -  0.00096
+TPM2u+F+I+R2      -4877.937    9885.874 -  0.00523    9891.816 -  0.00515   10231.665 - 0.000309
+F81+F+R2          -4888.960    9901.920 - 1.72e-006    9907.318 - 2.21e-006   10231.751 - 0.000296
+K2P+R2            -4896.285    9912.571 - 8.35e-009    9917.622 - 1.28e-008   10231.762 - 0.000294
+K3Pu+F+I+R2       -4878.113    9886.226 -  0.00439    9892.168 -  0.00431   10232.018 - 0.000259
+TIM3+F+I+R2       -4874.539    9881.077 +   0.0576    9887.206 +   0.0516   10232.189 - 0.000238
+TVM+F+R2          -4874.897    9881.794 -   0.0402    9887.923 -    0.036   10232.905 - 0.000166
+TPM3+R2           -4894.394    9910.789 - 2.04e-008    9916.012 - 2.87e-008   10235.300 - 5.02e-005
+TIM2+F+I+R2       -4876.655    9885.311 -  0.00694    9891.440 -  0.00621   10236.422 - 2.86e-005
+TIM+F+I+R2        -4876.822    9885.643 -  0.00587    9891.772 -  0.00526   10236.754 - 2.42e-005
+TPM2+R2           -4895.258    9912.517 - 8.58e-009    9917.740 - 1.21e-008   10237.028 - 2.11e-005
+GTR+F+R2          -4873.565    9881.130 +   0.0561    9887.449 -   0.0457   10237.561 - 1.62e-005
+K3P+R2            -4896.244    9914.489 - 3.2e-009    9919.712 - 4.51e-009   10239.000 - 7.89e-006
+TNe+R2            -4896.248    9914.497 - 3.19e-009    9919.721 - 4.49e-009   10239.009 - 7.85e-006
+K2P+I+R2          -4896.731    9915.463 - 1.97e-009    9920.687 - 2.77e-009   10239.975 - 4.85e-006
+F81+F+I+R2        -4889.596    9905.192 - 3.34e-007    9910.769 - 3.94e-007   10240.343 - 4.03e-006
+TVM+F+I+R2        -4875.458    9884.917 -  0.00845    9891.236 -  0.00688   10241.348 - 2.44e-006
+TIM3e+R2          -4894.358    9912.716 - 7.76e-009    9918.115 -   1e-008   10242.548 - 1.34e-006
+TPM3+I+R2         -4894.836    9913.671 - 4.82e-009    9919.070 - 6.21e-009   10243.503 - 8.3e-007
+TIM2e+R2          -4895.216    9914.431 - 3.29e-009    9919.830 - 4.25e-009   10244.263 - 5.68e-007
+TPM2+I+R2         -4895.542    9915.083 - 2.38e-009    9920.482 - 3.07e-009   10244.915 - 4.1e-007
+GTR+F+I+R2        -4874.118    9884.235 -   0.0119    9890.747 -  0.00878   10245.986 - 2.4e-007
+TIMe+R2           -4896.208    9916.416 - 1.22e-009    9921.815 - 1.57e-009   10246.248 - 2.1e-007
+TNe+I+R2          -4896.683    9917.365 - 7.59e-010    9922.764 - 9.8e-010   10247.197 - 1.31e-007
+K3P+I+R2          -4896.720    9917.440 - 7.32e-010    9922.839 - 9.44e-010   10247.272 - 1.26e-007
+TVMe+R2           -4893.138    9912.277 - 9.67e-009    9917.854 - 1.14e-008   10247.428 - 1.17e-007
+JC+R2             -4908.548    9935.097 - 1.07e-013    9939.979 - 1.79e-013   10248.969 - 5.4e-008
+TIM3e+I+R2        -4894.819    9915.638 - 1.8e-009    9921.215 - 2.13e-009   10250.790 - 2.17e-008
+TIM2e+I+R2        -4895.499    9916.997 - 9.13e-010    9922.574 - 1.08e-009   10252.149 - 1.1e-008
+GTR+F+R3          -4873.547    9885.094 -  0.00773    9891.802 -  0.00518   10252.165 - 1.09e-008
+TIMe+I+R2         -4896.699    9919.397 - 2.75e-010    9924.974 - 3.25e-010   10254.549 - 3.32e-009
+SYM+R2            -4893.103    9914.206 - 3.69e-009    9919.964 - 3.97e-009   10254.677 - 3.11e-009
+TVMe+I+R2         -4893.421    9914.841 - 2.68e-009    9920.599 - 2.89e-009   10255.313 - 2.26e-009
+JC+I+R2           -4909.103    9938.206 - 2.26e-014    9943.258 - 3.47e-014   10257.398 - 7.98e-010
+GTR+F+I+R3        -4874.056    9888.112 -  0.00171    9895.020 -  0.00104   10260.503 - 1.69e-010
+SYM+I+R2          -4893.357    9916.715 - 1.05e-009    9922.656 - 1.03e-009   10262.506 - 6.21e-011
+GTR+F+I+G4        -4895.759    9925.518 - 1.29e-011    9931.837 - 1.05e-011   10281.949 - 3.72e-015
+GTR+F+I           -4971.498   10074.996 - 4.48e-044   10081.125 - 4.01e-044   10426.107 - 1.85e-046
+GTR+F+G4          -4980.657   10093.313 - 4.72e-048   10099.442 - 4.23e-048   10444.424 - 1.95e-050
+GTR+F             -5373.365   10876.730 - 3.61e-218   10882.671 - 3.55e-218   11222.521 - 2.13e-219
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: HKY+F+R2
+
+Rate parameter R:
+
+  A-C: 1.0000
+  A-G: 1.6381
+  A-T: 1.0000
+  C-G: 1.0000
+  C-T: 1.6381
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2539
+  pi(C) = 0.2224
+  pi(G) = 0.3127
+  pi(T) = 0.2109
+
+Rate matrix Q:
+
+  A    -1.045    0.2458    0.5661     0.233
+  C    0.2806    -1.008    0.3456    0.3817
+  G    0.4596    0.2458   -0.9385     0.233
+  T    0.2806    0.4026    0.3456    -1.029
+
+Model of rate heterogeneity: FreeRate with 2 categories
+Site proportion and rates:  (0.9206,0.1823) (0.07944,10.48)
+
+ Category  Relative_rate  Proportion
+  1         0.1823         0.9206
+  2         10.48          0.07944
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -4861.8452 (s.e. 172.8848)
+Unconstrained log-likelihood (without tree): -7007.5782
+Number of free parameters (#branches + #model parameters): 63
+Akaike information criterion (AIC) score: 9849.6905
+Corrected Akaike information criterion (AICc) score: 9855.2673
+Bayesian information criterion (BIC) score: 10184.8420
+
+Total tree length (sum of branch lengths): 0.6081
+Sum of internal branch lengths: 0.2252 (37.0283% of tree length)
+
+WARNING: 5 near-zero internal branches (<0.0007) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'PQ782784.1' is drawn at root
+
++--PQ782784.1
+|
+|                +--PV256206.1
+|           +----|
+|           |    |        +--PQ897219.1
+|           |    |     +--|
+|           |    |     |  |     +**PQ656938.1
+|           |    |     |  |  +**|
+|           |    |     |  |  |  +**PV195286.1
+|           |    |     |  +--|
+|           |    |     |     +--PQ812515.1
+|           |    |  +**|
+|           |    |  |  +------------------AB603655.1
+|           |    +--|
+|           |       |    +**PV111332.1
+|           |       +----|
+|           |            |        +**PP237255.1
+|           |            |     +--|
+|           |            |     |  +----------------------PQ454920.1
+|           |            |  +--|
+|           |            |  |  |                            +--PQ554712.1
+|           |            |  |  |                         +--|
+|           |            |  |  |                         |  +**OR430114.1
+|           |            |  |  |                      +--|
+|           |            |  |  |                      |  |  +**OQ891268.1
+|           |            |  |  |                      |  +--|
+|           |            |  |  |                      |     +--OR497730.1
+|           |            |  |  |              +-------|
+|           |            |  |  |              |       |  +**PP082086.1
+|           |            |  |  |              |       +--|
+|           |            |  |  |              |          +---OQ983818.1
+|           |            |  |  |           +--|
+|           |            |  |  |           |  |          +**PV076873.1
+|           |            |  |  |           |  |       +--|
+|           |            |  |  |           |  |       |  +**PV130052.1
+|           |            |  |  |           |  |    +--|
+|           |            |  |  |           |  |    |  +--PQ782679.1
+|           |            |  |  |           |  +----|
+|           |            |  |  |           |       |        +--PQ782809.1
+|           |            |  |  |           |       |     +**|
+|           |            |  |  |           |       |     |  +--PQ656875.1
+|           |            |  |  |           |       |  +--|
+|           |            |  |  |           |       |  |  +------PQ782653.1
+|           |            |  |  |           |       +**|
+|           |            |  |  |           |          +--PQ782438.1
+|           |            |  |  +-----------|
+|           |            |  |              |  +--------------------PQ782692.1
+|           |            |  |              +--|
+|           |            |  |                 +**PQ782693.1
+|           |            +**|
+|           |               +--PQ097984.1
+|        +--|
+|        |  +--PQ797033.1
+|  +-----|
+|  |     +----------PV256072.1
++--|
+|  +--PQ782870.1
+|
++--PQ782302.1
+
+Tree in newick format:
+
+(PQ782784.1:0.0025871098,((((PV256206.1:0.0103911331,(((PQ897219.1:0.0038316498,((PQ656938.1:0.0000010020,PV195286.1:0.0000024218):0.0000021783,PQ812515.1:0.0116837561):0.0083609370):0.0010486801,AB603655.1:0.0693308257):0.0000021420,(PV111332.1:0.0000010020,(((PP237255.1:0.0000022011,PQ454920.1:0.0824960714):0.0028803853,(((((PQ554712.1:0.0016831671,OR430114.1:0.0000010020):0.0011545399,(OQ891268.1:0.0000010020,OR497730.1:0.0046206032):0.0010869164):0.0051694830,(PP082086.1:0.0000010020,OQ983818.1:0.0157898279):0.0009229035):0.0285173213,(((PV076873.1:0.0000010020,PV130052.1:0.0000010020):0.0066760173,PQ782679.1:0.0059046326):0.0059409141,(((PQ782809.1:0.0026241738,PQ656875.1:0.0026011220):0.0000025195,PQ782653.1:0.0254347671):0.0011498601,PQ782438.1:0.0042764924):0.0000023355):0.0198719120):0.0105890686,(PQ782692.1:0.0748895156,PQ782693.1:0.0000025050):0.0079531623):0.0457918157):0.0108629226,PQ097984.1:0.0042238009):0.0000020316):0.0180599911):0.0047480875):0.0189159284,PQ797033.1:0.0031657635):0.0057923048,PV256072.1:0.0417753032):0.0213613685,PQ782870.1:0.0071163895):0.0049800841,PQ782302.1:0.0018104545);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t pseudo-16s.phy.treefile -m "HKY{1.63806}+F{0.253937,0.222434,0.312727,0.210902}+R2{0.92056,0.182259,0.07944,10.4761}" --length 1510
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s pseudo-16s.phy --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s pseudo-16s.phy --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Wed May 07 10:46:21 2025
+Total CPU time used: 3.60938 seconds (0h:0m:3s)
+Total wall-clock time used: 3.44654 seconds (0h:0m:3s)
+

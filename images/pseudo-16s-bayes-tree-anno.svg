@@ -1,0 +1,133 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=30;
+	taxlabels
+	'AB603655.1'[&!name="Pseudomonas fluorescens strain MPF13"]
+	'OQ891268.1'[&!name="Pseudomonas parafulva strain T6-MUV"]
+	'OQ983818.1'[&!name="Pseudomonas parafulva strain CRS01-1"]
+	'OR430114.1'[&!name="Pseudomonas parafulva strain NDgBM1"]
+	'OR497730.1'[&!name="Pseudomonas parafulva strain PP-16"]
+	'PP082086.1'[&!name="Pseudomonas parafulva strain CRRFLT7"]
+	'PP237255.1'[&!name="Pseudomonas synxantha strain EGI-MS-34"]
+	'PQ097984.1'[&!name="Pseudomonas synxantha strain xtr338"]
+	'PQ454920.1'[&!name="Pseudomonas synxantha strain P4-24-4"]
+	'PQ554712.1'[&!name="Pseudomonas parafulva strain HBB118"]
+	'PQ656875.1'[&!name="Pseudomonas fluorescens strain M6A8-2a"]
+	'PQ656938.1'[&!name="Pseudomonas fluorescens strain M5A6_1a"]
+	'PQ782302.1'[&!name="Pseudomonas fluorescens strain CT521"]
+	'PQ782438.1'[&!name="Pseudomonas fluorescens strain LT101"]
+	'PQ782653.1'[&!name="Pseudomonas fluorescens strain WT340"]
+	'PQ782679.1'[&!name="Pseudomonas fluorescens strain WT426"]
+	'PQ782692.1'[&!name="Pseudomonas fluorescens strain WT504"]
+	'PQ782693.1'[&!name="Pseudomonas fluorescens strain WT505"]
+	'PQ782784.1'[&!name="Pseudomonas fluorescens strain XT605"]
+	'PQ782809.1'[&!name="Pseudomonas fluorescens strain XT635"]
+	'PQ782870.1'[&!name="Pseudomonas fluorescens strain YT514"]
+	'PQ797033.1'[&!name="Pseudomonas fluorescens strain HNW 3-5"]
+	'PQ812515.1'[&!name="Pseudomonas fluorescens strain QS2"]
+	'PQ897219.1'[&!name="Pseudomonas fluorescens strain BAB8"]
+	'PV076873.1'[&!name="Pseudomonas fluorescens strain PS-5"]
+	'PV111332.1'[&!name="Pseudomonas synxantha strain EU-BLWN-19"]
+	'PV130052.1'[&!name="Pseudomonas fluorescens strain PMF-3"]
+	'PV195286.1'[&!name="Pseudomonas fluorescens strain XenAg-B014"]
+	'PV256072.1'[&!name="Pseudomonas fluorescens strain BF-T-16"]
+	'PV256206.1'[&!name="Pseudomonas fluorescens strain YF-R-2"]
+;
+end;
+
+begin trees;
+	tree con_50_majrule = [&R] ('PQ782784.1'[&!rotate=true]:0.002951,'PQ782302.1'[&!rotate=true]:0.002668,(((('PV256206.1'[&!name="PV256206.1 Pseudomonas fluorescens strain YF-R-2"]:0.013067,('PQ897219.1':0.004407,('PV111332.1':8.43E-4,(('PP237255.1':0.004363,(((('PQ554712.1':0.002964,'OR430114.1':7.57E-4)[&label=0.739]:0.002076,('OQ891268.1':0.001145,'OR497730.1':0.006383)[&label=0.627]:0.002459)[&label=0.897]:0.005353,('PP082086.1':0.001033,'OQ983818.1':0.017147)[&label=0.59]:0.003093)[&label=1.0,!hilight={6,0.035507999999999984,#9999ff}]:0.027459,((('PV076873.1':9.36E-4,'PV130052.1':9.15E-4)[&label=1.0]:0.008981,'PQ782679.1':0.006259)[&label=0.971]:0.006932,'PQ782809.1':0.003181,('PQ782653.1':0.021855,'PQ656875.1':0.004376)[&label=0.536]:0.014499,'PQ782438.1':0.005064)[&label=0.988]:0.02417,('PQ782692.1':0.072929,'PQ782693.1':0.005805)[&label=0.788]:0.010278)[&label=0.986]:0.040416,'PQ454920.1':0.084388)[&label=0.535]:0.006867,'PQ097984.1':0.005491)[&label=0.648]:0.00521)[&label=0.987]:0.018304,'AB603655.1':0.071948,('PQ656938.1':0.00175,'PV195286.1'[&!name="Pseudomonas fluorescens strain XenAg-B014"]:0.004784,'PQ812515.1':0.01284)[&label=0.565]:0.004243)[&label=0.734]:0.005855)[&label=0.982]:0.020933,'PQ797033.1':0.004735)[&label=0.602]:0.007666,'PV256072.1'[&!name="Pseudomonas fluorescens strain BF-T-16"]:0.045384)[&label=0.998]:0.023395,'PQ782870.1':0.00926)[&label=0.814]:0.006067);
+	tree con_50_majrule = [&R] ('PQ782784.1':0.002951,'PQ782302.1':0.002668,(((('PV256206.1':0.013067,('PQ897219.1':0.004407,('PV111332.1':8.43E-4,(('PP237255.1':0.004363,(((('PQ554712.1':0.002964,'OR430114.1':7.57E-4):0.002076,('OQ891268.1':0.001145,'OR497730.1':0.006383):0.002459):0.005353,('PP082086.1':0.001033,'OQ983818.1':0.017147):0.003093):0.027459,((('PV076873.1':9.36E-4,'PV130052.1':9.15E-4):0.008981,'PQ782679.1':0.006259):0.006932,'PQ782809.1':0.003181,('PQ782653.1':0.021855,'PQ656875.1':0.004376):0.014499,'PQ782438.1':0.005064):0.02417,('PQ782692.1':0.072929,'PQ782693.1':0.005805):0.010278):0.040416,'PQ454920.1':0.084388):0.006867,'PQ097984.1':0.005491):0.00521):0.018304,'AB603655.1':0.071948,('PQ656938.1':0.00175,'PV195286.1':0.004784,'PQ812515.1':0.01284):0.004243):0.005855):0.020933,'PQ797033.1':0.004735):0.007666,'PV256072.1':0.045384):0.023395,'PQ782870.1':0.00926):0.006067);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=1.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=163;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute="label";
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=22.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="Node ages";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=false;
+	set nodeLabels.significantDigits=4;
+	set nodeShapeExternal.colourAttribute="User selection";
+	set nodeShapeExternal.isShown=true;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute="Fixed";
+	set nodeShapeInternal.colourAttribute="User selection";
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute="Fixed";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=181782;
+	set polarLayout.rootLength=198;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=1553;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=0.05;
+	set scaleAxis.minorTicks=0.025;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=10;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=true;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+
